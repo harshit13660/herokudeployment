@@ -13,6 +13,7 @@ url='https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDist
 para={"district_id": 148, "date": b.strftime("%d-%m-%Y")}
 a=requests.get(url,params=para,headers=headers)
 fi=a.text
+print(fi)
 
 
 try:
