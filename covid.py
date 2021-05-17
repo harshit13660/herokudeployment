@@ -7,12 +7,12 @@ API= 'o.WfYU9eM5o7fXoBq5PxburlwjXEpfCw0Q'
 pb=PushBullet(API)
 #SHAHDARA
 b=datetime.today()
-headers = {"User-Agent":"BF-DirectLine/3.0 (Microsoft-BotFramework/3.0 +https://botframework.com/ua)"}
+headers = {"User-Agent":"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"}
 url='https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?'
 para={"district_id": 148, "date": b.strftime("%d-%m-%Y")}
 a=requests.get(url,params=para,headers=headers)
 file=a.json()
-
+print(a)
 
 
 for i in range(0,len(file['centers'])):
