@@ -30,7 +30,7 @@ try:
     if count >= 1:
         pb.push_note("Vaccine Slots Available", "Slots Available for 18+ Hurry up")
 except Exception as e:
-    print("No json Data")
+    print("No json Data found on server")
 
 
 
