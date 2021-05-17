@@ -8,7 +8,7 @@ API= 'o.WfYU9eM5o7fXoBq5PxburlwjXEpfCw0Q'
 pb=PushBullet(API)
 #SHAHDARA
 b=datetime.today()
-headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"}
+headers = {"User-Agent": "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"}
 url='https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?'
 para={"district_id": 148, "date": b.strftime("%d-%m-%Y")}
 a=requests.get(url,params=para,headers=headers)
