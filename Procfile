@@ -1,0 +1,1 @@
+web: phython covid script.py
