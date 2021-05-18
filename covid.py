@@ -17,7 +17,8 @@ url='https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDist
 para={"district_id": 148, "date": b.strftime("%d-%m-%Y")}
 
 proxi={
-    "https": "14.140.131.82:3128"
+    "https": "14.140.131.82:3128",
+    "http" : "139.5.19.165:8080"
 }
 
 while True:
@@ -36,7 +37,7 @@ while True:
     except Exception as e:
         print(e)
 
-    time.sleep(120)
+    time.sleep(5)
 
 
 
