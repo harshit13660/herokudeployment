@@ -5,8 +5,12 @@ import time
 
 
 
-API= 'o.WfYU9eM5o7fXoBq5PxburlwjXEpfCw0Q'
-pb=PushBullet(API)
+API_har= 'o.WfYU9eM5o7fXoBq5PxburlwjXEpfCw0Q'
+pb_har=PushBullet(API_har)
+
+API_tos= "o.2qGnwMYbBQd8nmf7AcKcNz1Zk7V4VABD"
+pb_tos=PushBullet(API_tos)
+
 #SHAHDARA
 b=datetime.today()
 
@@ -32,7 +36,8 @@ while True:
                 count = count + 1
 
         if count >= 1:
-            pb.push_note("Vaccine Slots Available", "Slots Available for 18+ Hurry up")
+            pb_har.push_note("Vaccine Slots Available", "Slots Available for 18+ Hurry up")
+            pb_tos.push_note("Vaccine Slots Available", "Slots Available for 18+ Hurry up")
 
     except Exception as e:
         print(e)
