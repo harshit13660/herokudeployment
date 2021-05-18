@@ -32,7 +32,7 @@ while True:
         file = a.json()
 
         for i in range(0, len(file['centers'])):
-            if(file['centers'][i]['sessions'][0]['min_age_limit'] == 45 and (file['centers'][i]['sessions'][0]['available_capacity'] >= 1)):
+            if(file['centers'][i]['sessions'][0]['min_age_limit'] == 18 and (file['centers'][i]['sessions'][0]['available_capacity'] >= 1)):
                 count = count + 1
 
         if count >= 1:
