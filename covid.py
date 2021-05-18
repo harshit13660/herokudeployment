@@ -17,8 +17,8 @@ url='https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDist
 para={"district_id": 148, "date": b.strftime("%d-%m-%Y")}
 
 proxi={
-    "https": "14.140.131.82:3128",
-    "http" : "139.5.19.165:8080"
+    "https": "http://14.140.131.82:3128",
+    "http" : "http://139.5.19.165:8080"
 }
 
 while True:
