@@ -38,11 +38,12 @@ while True:
         if count >= 1:
             pb_har.push_note("Vaccine Slots Available", "Slots Available for 18+ Hurry up")
             pb_tos.push_note("Vaccine Slots Available", "Slots Available for 18+ Hurry up")
+        print("Successfully entered try block")
 
     except Exception as e:
         print(e)
 
-    time.sleep(5)
+    time.sleep(120)
 
 
 
